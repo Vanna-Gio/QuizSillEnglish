@@ -1204,7 +1204,28 @@
                     { sentence: "I don't feel good.", khmer: "ខ្ញុំមានអារម្មណ៍មិនល្អ។" },
                     { sentence: "I think I'm coming down with something.", khmer: "ខ្ញុំគិតថាខ្ញុំកំពុងឈឺអ្វីមួយហើយ។" },
                     { sentence: "I'm feeling under the weather, and I think that I will go home and rest.", khmer: "ខ្ញុំមិនស្រួលខ្លួន ហើយខ្ញុំគិតថាខ្ញុំនឹងទៅផ្ទះសម្រាក។" },
-                    { sentence: "I'm not myself today.", khmer: "ថ្ងៃនេះខ្ញុំមានអារម្មមិនស្រួលខ្លួនទាំងផ្លូវកាយ​ទាំង​ផ្លូវចិត្ត។" }
+                    { sentence: "I'm not myself today.", khmer: "ថ្ងៃនេះខ្ញុំមានអារម្មមិនស្រួលខ្លួនទាំងផ្លូវកាយ​ទាំង​ផ្លូវចិត្ត។" },
+                        { sentence: "As far as I'm concerned ", khmer: "តាមដែលខ្ញុំយល់ឃើញ។" },
+                    { sentence: "In all honesty", khmer: "ដោយស្មោះត្រង់។" },
+                    { sentence: "I'm not gonna lie", khmer: "ខ្ញុំមិននឹងបោកប្រាស់ទេ។" },
+                    { sentence: "In my opinion ", khmer: "តាមគំនិតរបស់ខ្ញុំ។" },
+                    { sentence: "If you ask me.", khmer: "ប្រសិនបើអ្នកសួរខ្ញុំ។" },
+                    { sentence: "When you think about it.", khmer: "នៅពេលអ្នកគិតអំពីវា។" },
+                        { sentence: "I can't follow you.", khmer: "ខ្ញុំស្លាប់អ្នកអត់ទាន់់ទេ៕" },
+                    { sentence: "oh, I love that briefcase, but I can't afford it.", khmer: "ប្រសិនបើអ្នកសួរខ្ញុំ។" },
+                    { sentence: "I can't afford it.", khmer: "ខ្ញុំមិនមានលទ្ធភាពទិញទេ។" }ុំ
+                        { sentence: "I can't wait to have one. ", khmer: "" },
+                    { sentence: "I can't wait to see this", khmer: "ខ្ញុំពិតជាចង់ឃើញវា។" },
+                    { sentence: "I can't wait to tell you.", khmer: "ខ្ញុំពិតជាចង់..." },
+                    { sentence: "I can't wait to read it.", khmer: "ខ្ញុំពិតជាចង់..." },
+                    { sentence: "I can't wait to get home.", khmer: "ខ្ញុំពិតជាចង់..." },
+                    { sentence: "I can't wait to meet you.", khmer: "ខ្ញុំពិតជាចង់..​​" },
+                        { sentence: "He's so annoying.", khmer: "គាត់និយាយច្រើន​គួរឲ្យរំខានច្រើន។" },
+                    { sentence: "He always complains about everything Such a pain!", khmer: "" },
+                    { sentence: "You are such a pain the ass.", khmer: "អ្នកគួរឲ្យធុញ គួរឲ្យរំខាន់" },
+                    { sentence: "You are so irritating.", khmer: "អ្នកគួរឲ្យធុញ គួរឲ្យរំខាន់ណាស់(សំលេងធ្ងន់)" },
+                    { sentence: ".", khmer: "ខ្ញុំពិតជាចង់..​​" },
+                        
                                 ],
                 "Shadowing Speak ": [
                     
@@ -1280,7 +1301,13 @@
                 ],
                 "Idioms": [
                     { sentence: "It's raining cats and dogs.", khmer: "ភ្លៀងខ្លាំងណាស់។", explanation: "Meaning: Raining very heavily." },
-                    { sentence: "Break a leg!", khmer: "សូមសំណាងល្អ!", explanation: "Meaning: Good luck! (Used especially in theater)." }
+                    { sentence: "Break a leg!", khmer: "សូមសំណាងល្អ!", explanation: "Meaning: Good luck! (Used especially in theater)." },
+                        { sentence: "I wasn't born yesterday.", khmer: "ខ្ញុំមិនមែនក្មេងអាយុ៣ឆ្នាំទេ។", explanation: "" },
+                    { sentence: "That's more like it.", khmer: "បែបហ្នឹងទើបប្រសើរ​", explanation: "Meaning: " },
+                        { sentence: "I enjoy your company.", khmer: "ខ្ញុំចូលចិត្តការកំដររបស់អ្នក។", explanation: "Meaning: " },
+                    { sentence: "For here or to go", khmer: "ញ្ញាំនៅទីនេះ​ ឬក៏វិចខ្ចប់។", explanation: "Meaning: " },
+                          { sentence: "Don't take any chances.", khmer: "កុំប្រថុយគ្រោះថ្នាក់។", explanation: "Meaning: " },
+                    { sentence: "For here or to go", khmer: "ញ្ញាំនៅទីនេះ​ ឬក៏វិចខ្ចប់។", explanation: "Meaning: " },
                 ]
             },
             qna: [
