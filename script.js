@@ -1213,7 +1213,7 @@
                     { sentence: "When you think about it.", khmer: "នៅពេលអ្នកគិតអំពីវា។" },
                         { sentence: "I can't follow you.", khmer: "ខ្ញុំស្លាប់អ្នកអត់ទាន់់ទេ៕" },
                     { sentence: "oh, I love that briefcase, but I can't afford it.", khmer: "ប្រសិនបើអ្នកសួរខ្ញុំ។" },
-                    { sentence: "I can't afford it.", khmer: "ខ្ញុំមិនមានលទ្ធភាពទិញទេ។" }ុំ
+                    { sentence: "I can't afford it.", khmer: "ខ្ញុំមិនមានលទ្ធភាពទិញទេ។" },
                         { sentence: "I can't wait to have one. ", khmer: "" },
                     { sentence: "I can't wait to see this", khmer: "ខ្ញុំពិតជាចង់ឃើញវា។" },
                     { sentence: "I can't wait to tell you.", khmer: "ខ្ញុំពិតជាចង់..." },
