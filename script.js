@@ -2,6 +2,11 @@
 
         // Game Data - Moved to separate object for better organization
         const gameData = {
+                vocab1: [
+{ word: "inspiration (noun)", meaning: "pleasing to the senses or mind aesthetically", khmer: "ស្អាត", audio: "beautiful.mp3" },
+
+
+                  ],      
             vocab: [
                  // Your existing 60 vocabulary words go here first
                  { word: "beautiful", meaning: "pleasing to the senses or mind aesthetically", khmer: "ស្អាត", audio: "beautiful.mp3" },
@@ -1577,6 +1582,7 @@
                       <button class="btn btn-primary" onclick="startVocabQuiz(15)">🔹 15 Words (Beginner)</button>
                       <button class="btn btn-primary" onclick="startVocabQuiz(30)">🔸 30 Words (Intermediate)</button>
                        <button class="btn btn-primary" onclick="startVocabQuiz(40)">🔸 40 Words (Intermediate)</button>
+                       <button class="btn btn-primary" onclick="startVocabQuiz1(${gameData.vocab.length})">🔸 New Words (Intermediate)</button>
                       <button class="btn btn-primary" onclick="startVocabQuiz(${gameData.vocab.length})">🔺 All ${gameData.vocab.length} Words (Advanced)</button>
                   </div>
                   <div class="text-center" style="margin-top: 1rem;">
@@ -1594,6 +1600,14 @@
           gameState.score = 0;
           displayVocabQuestion();
       }
+function startVocabQuiz1(length) {
+          gameState.quizLength = length; // Store the selected quiz length
+          // Shuffle the entire vocabulary data and then take only the required length
+          gameState.currentPool = shuffleArray(gameData.vocab).slice(0, gameState.quizLength);
+          gameState.currentIndex = 0;
+          gameState.score = 0;
+          displayVocabQuestion();
+}
 
       function displayVocabQuestion() {
           // New: Clear any existing timer when a new question is displayed
