@@ -2,10 +2,15 @@
 
         // Game Data - Moved to separate object for better organization
         const gameData = {
+                 vocab2: [
+                 
+                { word: "In order to ", meaning: " is used to express purpose — it means -for the purpose of or to be able to.Examples:  I study hard in order to pass the exam.<br>→ ខ្ញុំសូត្រយ៉ាងខំ ដើម្បីឲ្យឆ្លងវិញ្ញាសា។<br>She exercises in order to stay healthy.<br>→ នាងហាត់ប្រាណ ដើម្បីរក្សាសុខភាព។", khmer: "ដើម្បី", audio: "In order to.mp3" },
+             ],
+                
                 vocab1: [
 { word: "beyond (Preposition / Adverb)", meaning: "1. Preposition – Past a place or limit<br>English: The road continues beyond the hill.<br>Khmer: ផ្លូវនោះបន្តឆ្លងលើសភ្នំទៅទៀត<br>English: The damage was beyond repair.<br>Khmer: ការខូចខាតលើសសមត្ថភាពជួសជុលបាន។<br>3. Preposition – Outside the range of understanding or possibility<br>English: This concept is beyond me<br>Khmer: គំនិតនេះខ្ញុំមិនអាចយល់បានទេ។<br>4. Adverb – At a further place<br>English: He looked beyond and saw the ocean<br>Khmer: គាត់មើលទៅឆ្ងាយហើយឃើញសមុទ្រ", khmer: "លើស / ឆ្លងផុត / ក្រៅពី", audio: "beyond.mp3" },
 { word: "inspiration (noun)", meaning: "Something or someone that motivates you to do or feel something, exspecially something creative or positive.<br>2. A sudden good idea or feeling that encourages action. <br> Examples: 1. She is my inspiration to work harder.<br>->នាង​គីជា​ការ​ជំរុញចិត្ត​សម្រាប់ខ្ញុំឲ្យខិតខំធ្វើការជាងមុន។<br>2. This story gave me a lot of inspiration.<br>->រឿង​នេះបាន​ផ្តល់ការជំរុញចិត្តយ៉ាងច្រើនសម្រាប់ខ្ញុំ។<br>3. Nature is a source of inspiration for artists.<br>->ធម្មជាតិគឺជា​ប្រភេទ​នៃការ​ជះឥទ្ធិពលសម្រាប់សិល្បករ។ ", khmer: "ការជំរុញចិត្ត/​ ការជះឥទ្ធិពល/ បែបបទជាដើមគំនិត", audio: "inspiration.mp3" },
-{ word: "In order to ", meaning: " is used to express purpose — it means -for the purpose of or to be able to.Examples:  I study hard in order to pass the exam.<br>→ ខ្ញុំសូត្រយ៉ាងខំ ដើម្បីឲ្យឆ្លងវិញ្ញាសា។<br>She exercises in order to stay healthy.<br>→ នាងហាត់ប្រាណ ដើម្បីរក្សាសុខភាព។", khmer: "ដើម្បី", audio: "In order to.mp3" },
+
 
 { word: "Versatile  ( adjective)", meaning: " Able to do many different things well or having many uses.<br>Examples: She is a versatile employee.<br>→ នាងជាបុគ្គលិកដែលមានសមត្ថភាពច្រើនជំនាញ។<br>This knife is very versatile in the kitchen.<br>→ កាំបិតនេះអាចប្រើបានច្រើនទ្រង់ទ្រាយក្នុងផ្ទះបាយ។", khmer: "មានសមត្ថភាពច្រើនជំនាញ/ អាចប្រើបានច្រើនទ្រង់ទ្រាយ", audio: "versatile.mp3" },
 
@@ -1574,29 +1579,39 @@
             }
           }
 
-          // --- Vocabulary Game Functions ---
-        function showVocabStartScreen() {
-          elements.gameArea.innerHTML = `
-              <div class="container">
-                  <h2>Vocabulary Challenge</h2>
-                  <p class="text-center">Learn new words and test your knowledge!</p>
-                  <h3 class="text-center">Select Quiz Length</h3>
-                  <div class="sub-menu-buttons">
-                    <button class="btn btn-primary" onclick="startVocabQuiz(5)">🔹 5 Words (Beginner)</button>
-                      <button class="btn btn-primary" onclick="startVocabQuiz(10)">🔹 10 Words (Beginner)</button>
-                      <button class="btn btn-primary" onclick="startVocabQuiz(15)">🔹 15 Words (Beginner)</button>
-                      <button class="btn btn-primary" onclick="startVocabQuiz(30)">🔸 30 Words (Intermediate)</button>
-                       <button class="btn btn-primary" onclick="startVocabQuiz(40)">🔸 40 Words (Intermediate)</button>
-                       <button class="btn btn-primary" onclick="startVocabQuiz1(${gameData.vocab.length})">🔸 New Words (Intermediate)</button>
-                      <button class="btn btn-primary" onclick="startVocabQuiz(${gameData.vocab.length})">🔺 All ${gameData.vocab.length} Words (Advanced)</button>
-                  </div>
-                  <div class="text-center" style="margin-top: 1rem;">
-                      <button class="btn btn-secondary" onclick="goHome()">Back to Main Menu</button>
-                  </div>
-              </div>
-          `;
+           // --- Vocabulary Game Functions ---
+         function showVocabStartScreen() {
+        elements.gameArea.innerHTML = `
+                       <div class="container">
+                           <h2>Vocabulary Challenge</h2>
+                           <p class="text-center">Learn new words and test your knowledge!</p>
+                           <h3 class="text-center">Select Quiz Length</h3>
+                           <div class="sub-menu-buttons">
+                             <button class="btn btn-primary" style="background-color: #4CAF50; color: white;" onclick="startVocabQuiz(5)">🔹 5 Words (Beginner)</button>
+                             <button class="btn btn-primary" style="background-color: #4CAF50; color: white;" onclick="startVocabQuiz(10)">🔹 10 Words (Beginner)</button>
+                             <button class="btn btn-primary" style="background-color: #4CAF50; color: white;" onclick="startVocabQuiz(15)">🔹 15 Words (Beginner)</button>
+                             <button class="btn btn-primary" style="background-color: #FF9800; color: white;" onclick="startVocabQuiz(30)">😊 30 Words (Intermediate)</button>
+                             <button class="btn btn-primary" style="background-color: #FF9800; color: white;" onclick="startVocabQuiz(40)">🔷 40 Words (Intermediate)</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuiz1(${gameData.vocab1.length})">👉  New Words ${gameData.vocab1.length}</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuiz1(${gameData.vocab2.length})"">${gameData.vocab2.length}🟠ពាក្យពិសេស</button>
+                             <button class="btn btn-primary" style="background-color: #F44336; color: white;" onclick="startVocabQuiz(${gameData.vocab.length})">🔺 All ${gameData.vocab.length} Words (Advanced)</button>
+                           </div>
+                           <div class="text-center" style="margin-top: 1rem;">
+                               <button class="btn btn-secondary" style="background-color: #9E9E9E; color: white;" onclick="goHome()">Back to Main Menu</button>
+                           </div>
+                       </div>
+                   `;
+       }
+ 
+      
+function startVocabQuiz2(length) {
+          gameState.quizLength = length; // Store the selected quiz length
+          // Shuffle the entire vocabulary data and then take only the required length
+          gameState.currentPool = shuffleArray(gameData.vocab2).slice(0, gameState.quizLength);
+          gameState.currentIndex = 0;
+          gameState.score = 0;
+          displayVocabQuestion();
       }
-
       function startVocabQuiz(length) {
           gameState.quizLength = length; // Store the selected quiz length
           // Shuffle the entire vocabulary data and then take only the required length
