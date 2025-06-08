@@ -4,6 +4,11 @@
         const gameData = {
                 vocab1: [
 { word: "beyond (Preposition / Adverb)", meaning: "1. Preposition – Past a place or limit<br>English: The road continues beyond the hill.<br>Khmer: ផ្លូវនោះបន្តឆ្លងលើសភ្នំទៅទៀត<br>English: The damage was beyond repair.<br>Khmer: ការខូចខាតលើសសមត្ថភាពជួសជុលបាន។<br>3. Preposition – Outside the range of understanding or possibility<br>English: This concept is beyond me<br>Khmer: គំនិតនេះខ្ញុំមិនអាចយល់បានទេ។<br>4. Adverb – At a further place<br>English: He looked beyond and saw the ocean<br>Khmer: គាត់មើលទៅឆ្ងាយហើយឃើញសមុទ្រ", khmer: "លើស / ឆ្លងផុត / ក្រៅពី", audio: "beyond.mp3" },
+{ word: "inspiration (noun)", meaning: "Something or someone that motivates you to do or feel something, exspecially something creative or positive.<br>2. A sudden good idea or feeling that encourages action. <br> Examples: 1. She is my inspiration to work harder.<br>->នាង​គីជា​ការ​ជំរុញចិត្ត​សម្រាប់ខ្ញុំឲ្យខិតខំធ្វើការជាងមុន។<br>2. This story gave me a lot of inspiration.<br>->រឿង​នេះបាន​ផ្តល់ការជំរុញចិត្តយ៉ាងច្រើនសម្រាប់ខ្ញុំ។<br>3. Nature is a source of inspiration for artists.<br>->ធម្មជាតិគឺជា​ប្រភេទ​នៃការ​ជះឥទ្ធិពលសម្រាប់សិល្បករ។ ", khmer: "ការជំរុញចិត្ត/​ ការជះឥទ្ធិពល/ បែបបទជាដើមគំនិត", audio: "inspiration.mp3" },
+{ word: "In order to ", meaning: " is used to express purpose — it means -for the purpose of or to be able to.Examples:  I study hard in order to pass the exam.<br>→ ខ្ញុំសូត្រយ៉ាងខំ ដើម្បីឲ្យឆ្លងវិញ្ញាសា។<br>She exercises in order to stay healthy.<br>→ នាងហាត់ប្រាណ ដើម្បីរក្សាសុខភាព។", khmer: "ដើម្បី", audio: "In order to.mp3" },
+
+{ word: "Versatile  ( adjective)", meaning: " Able to do many different things well or having many uses.<br>Examples: She is a versatile employee.<br>→ នាងជាបុគ្គលិកដែលមានសមត្ថភាពច្រើនជំនាញ។<br>This knife is very versatile in the kitchen.<br>→ កាំបិតនេះអាចប្រើបានច្រើនទ្រង់ទ្រាយក្នុងផ្ទះបាយ។", khmer: "មានសមត្ថភាពច្រើនជំនាញ/ អាចប្រើបានច្រើនទ្រង់ទ្រាយ", audio: "versatile.mp3" },
+
 
 
                   ],      
