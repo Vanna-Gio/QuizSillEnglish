@@ -1592,8 +1592,8 @@
                              <button class="btn btn-primary" style="background-color: #4CAF50; color: white;" onclick="startVocabQuiz(15)">🔹 15 Words (Beginner)</button>
                              <button class="btn btn-primary" style="background-color: #FF9800; color: white;" onclick="startVocabQuiz(30)">😊 30 Words (Intermediate)</button>
                              <button class="btn btn-primary" style="background-color: #FF9800; color: white;" onclick="startVocabQuiz(40)">🔷 40 Words (Intermediate)</button>
-                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuiz1(${gameData.vocab1.length})">👉 ${gameData.vocab1.length}  New Words</button>
-                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuiz2(${gameData.vocab2.length})">🟠${gameData.vocab2.length}ពាក្យពិសេស</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuiz1(${gameData.vocab1.length})">👉New  ${gameData.vocab1.length}  Words</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuiz2(${gameData.vocab2.length})">🟠 ពាក្យពិសេស</button>
                              <button class="btn btn-primary" style="background-color: #F44336; color: white;" onclick="startVocabQuiz(${gameData.vocab.length})">🔺 All ${gameData.vocab.length} Words (Advanced)</button>
                            </div>
                            <div class="text-center" style="margin-top: 1rem;">
