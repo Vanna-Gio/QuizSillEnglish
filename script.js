@@ -3,7 +3,7 @@
         // Game Data - Moved to separate object for better organization
         const gameData = {
                 vocab1: [
-{ word: "inspiration (noun)", meaning: "pleasing to the senses or mind aesthetically", khmer: "ស្អាត", audio: "beautiful.mp3" },
+{ word: "beyond (Preposition / Adverb)", meaning: "1. Preposition – Past a place or limit<br>English: The road continues beyond the hill.<br>Khmer: ផ្លូវនោះបន្តឆ្លងលើសភ្នំទៅទៀត<br>English: The damage was beyond repair.<br>Khmer: ការខូចខាតលើសសមត្ថភាពជួសជុលបាន។<br>3. Preposition – Outside the range of understanding or possibility<br>English: This concept is beyond me<br>Khmer: គំនិតនេះខ្ញុំមិនអាចយល់បានទេ។<br>4. Adverb – At a further place<br>English: He looked beyond and saw the ocean<br>Khmer: គាត់មើលទៅឆ្ងាយហើយឃើញសមុទ្រ", khmer: "លើស / ឆ្លងផុត / ក្រៅពី", audio: "beyond.mp3" },
 
 
                   ],      
@@ -1595,7 +1595,7 @@
       function startVocabQuiz(length) {
           gameState.quizLength = length; // Store the selected quiz length
           // Shuffle the entire vocabulary data and then take only the required length
-          gameState.currentPool = shuffleArray(gameData.vocab).slice(0, gameState.quizLength);
+          gameState.currentPool = shuffleArray(gameData.vocab1).slice(0, gameState.quizLength);
           gameState.currentIndex = 0;
           gameState.score = 0;
           displayVocabQuestion();
