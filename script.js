@@ -1308,7 +1308,10 @@
                         Finally, I believe consistency is key. Even if it's just a little bit every day, showing up and practicing regularly makes a huge difference. I try to make English a part of my daily routine.
                         <br>
                         So, to sum it up, it's about speaking, listening, learning vocabulary in phrases, using techniques like shadowing, and being consistent every single day.
-                        
+                        <audio controls>
+                            <source src="audio/That's a r.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            </audio>
                         `
                     }
 
