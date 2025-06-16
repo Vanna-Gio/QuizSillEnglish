@@ -615,7 +615,7 @@
                     // The structureQuiz is a general quiz, not specific to tenses.
                     // You might want to remove it or update your grammar quiz logic
                     // to choose questions from specific tenses if you prefer.
-                    structureQuiz: [
+                                  structureQuiz: [
                         {
                             question: "Choose the correct verb form: 'She usually ______ (study) at night.'",
                             type: "fill-in-blank",
@@ -629,7 +629,7 @@
                             explanation: "For planned future actions, we often use Present Continuous: 'are going'."
                         },
                         {
-                            question: "By the time I arrive, they ______ (finish) dinner. (Future Perfect)",
+                            question: " <b>By the time</b> I arrive, they ______ (finish) dinner. (Future Perfect)",
                             type: "fill-in-blank",
                             correctAnswer: "will have finished",
                             explanation: "The action of finishing dinner will be completed before the arrival in the future, thus Future Perfect."
@@ -688,13 +688,11 @@
                             explanation: "Describes an action that will be in progress at a specific time in the future."
                         },
                         {
-                            question: "Which sentence indicates a habitual action?",
-                            type: "multiple-choice",
-                            options: [
-                                { text: "He is playing outside.", correct: false },
-                                { text: "They usually have breakfast at 7 AM.", correct: true, explanation: "Correct: 'usually have' indicates a routine or habit." },
-                                { text: "She will buy a new car.", correct: false }
-                            ]
+                            question: "They usually _____ breakfast at 7 AM.",
+                            type: "fill-in-blank",
+                            correctAnswer: "have",
+                            explanation: "Correct: 'usually have' indicates a routine or habit." 
+                               
                         },
                         {
                             question: "It ______ (snow) heavily when we left the house. (Past Continuous)",
@@ -715,13 +713,11 @@
                             explanation: "A simple prediction about a future event uses 'will'."
                         },
                         {
-                            question: "Which sentence uses 'be going to' for a definite future plan?",
-                            type: "multiple-choice",
-                            options: [
-                                { text: "I think it will rain.", correct: false },
-                                { text: "We are going to move to a new apartment next month.", correct: true, explanation: "Correct: 'are going to move' indicates a definite future plan." },
-                                { text: "He plays tennis every Sunday.", correct: false }
-                            ]
+                            question: "We _____ to move to a new apartment next month.",
+                            type: "fill-in-blank",
+                            correctAnswer: "are going",
+                            explanation: "Correct: 'are going to move' indicates a definite future plan."
+                             
                         },
                         {
                             question: "He ______ (not eat) meat for a long time. (Present Perfect Simple Negative)",
@@ -751,13 +747,12 @@
                             explanation: "'No sooner had... than...' is used for an action that happened immediately after another. The first verb is in Past Perfect (had + Past Participle) and the second in Past Simple."
                         },
                         {
-                            question: "Which sentence correctly uses 'No sooner...than'?",
-                            type: "multiple-choice",
-                            options: [
-                                { text: "No sooner I opened the door than he left.", correct: false },
-                                { text: "No sooner had I opened the door than he left.", correct: true, explanation: "Correct: Uses inversion with 'had' after 'No sooner' and 'than' before the second clause." },
-                                { text: "No sooner had I open the door when he left.", correct: false }
-                            ]
+                            question: "Which sentence correctly uses 'No sooner...than'?: No sooner had I ____(open) the door than he _____(leave).",
+                            type: "fill-in-blank",
+                            correctAnswer: "opened",
+                            correctAnswer: "left",          
+                            explanation: "Correct: Uses inversion with 'had' after 'No sooner' and 'than' before the second clause." 
+                             
                         },
 
                         // Hardly had + Subject + Past Participle + when + Subject + Past Simple
@@ -804,7 +799,40 @@
                         question: "Only after he had finished his degree ______ (he find) a good job.",
                         type: "fill-in-blank",
                         correctAnswer: "did he find",
-                        explanation: "This is an example of inversion after 'Only after'. The main clause requires 'did' + subject + base verb."
+                        explanation: ` This is an example of inversion after 'Only after'. The main clause requires 'did' + subject + base verb.<br>✅ Explanation:<br>This sentence emphasizes the order of events — first finishing<br>his degree, then finding a good job.<br>The use of “only after...” highlights that the second event depends on the first.
+                        <br>➥ មានតែបន្ទាប់ពីគាត់បានបញ្ចប់សញ្ញាបត្ររបស់គាត់ ទើបគាត់រកបានការងារល្អ។
+                        <br>🔹 2️⃣ Natural Translation (Fluently, as a native speaker would say): 
+                        <br>➥ មានតែពេលដែលគាត់បញ្ចប់ការសិក្សាទើបគាត់អាចរកបានការងារល្អ។
+                        <br>➥ Other variant:
+                        <br>➥ បន្ទាប់ពីបញ្ចប់ការសិក្សារួច គាត់ទើបរកបានការងារល្អ។
+                        <br>🔹 3️⃣ More formal or casual versions:
+                        <br> ✅ Formal:
+                        <br> ➥ មានតែបន្ទាប់ពីលោកបានបញ្ចប់ការសិក្សារបស់លោកប៉ុណ្ណោះ ទើបលោកអាចស្វែងរកការងារសមរម្យបាន។
+                        <br> (Using លោក instead of គាត់ for formality)
+
+                        <br> ✅ Casual:
+                        <br> ➥ បន្ទាប់ពីរៀនចប់ហើយ ទើបគាត់បានរកការងារល្អធ្វើ។
+                        <br> (Simple and more conversational)
+                        <br>🔹 4️⃣ Breakdown of sentence structure:
+                        <br>➥ “Only after he had finished his degree...”
+
+                        <br>Main Clause Indicator: Only after
+
+                        <br>Subject: He
+
+                        <br>Action (past perfect tense in English, literal in Khmer): had finished his degree
+
+                        <br>➥ “...did he find a good job.”
+
+                        <br>Main Clause: did find
+
+                        <br>Subject: he
+
+                        <br>Object: a good job
+
+                        <br>➥ The sentence highlights dependence — first degree finished, then job found.
+                        <br>This is a form of inverted sentence in English.
+                        <br>Usually we’d say: “He found a good job only after he had finished his degree.”` 
                     },
 
                     // So + Adjective/Adverb + auxiliary + S + that...
@@ -820,7 +848,7 @@
                         question: "If only I ______ (know) about the party earlier!",
                         type: "fill-in-blank",
                         correctAnswer: "had known",
-                        explanation: "'If only' used for wishes about the past requires the Past Perfect tense (had + Past Participle)."
+                        explanation: "'If only' used for wishes about the past requires the Past Perfect tense (had + Past Participle).➥ បើត្រឹមតែខ្ញុំបានដឹងពីពិធីជប់លៀងនេះមុន នោះប្រសើរជាង។<br>➥ បើសិនជាខ្ញុំដឹងមុន អាចទៅចូលរួមបាន។ (more casual)"
                     },
 
                     // It's high time / It's about time
@@ -861,12 +889,11 @@
                         },
                         {
                             question: "Which option correctly completes the First Conditional sentence: 'If I study hard, I ______ (pass) the exam.'",
-                            type: "multiple-choice",
-                            options: [
-                                { text: "pass", correct: false },
-                                { text: "will pass", correct: true, explanation: "Correct: 'will pass' is the result clause for a real future possibility." },
-                                { text: "passed", correct: false }
-                            ]
+                            type: "fill-in-blank",
+                            correctAnswer: "will pass",
+                            explanation: "Correct: 'will pass' is the result clause for a real future possibility." 
+                            
+                            
                         },
 
                 // Second Conditional (Unreal Present/Future)
@@ -891,13 +918,13 @@
                             explanation: "Third Conditional for unreal situations in the past: If + Past Perfect, would have + Past Participle."
                         },
                         {
-                            question: "Which option completes the Third Conditional: 'If they had known, they ______ (come) to the party.'",
-                            type: "multiple-choice",
-                            options: [
-                                { text: "would come", correct: false },
-                                { text: "would have come", correct: true, explanation: "Correct: 'would have come' is the result clause for an unreal past situation." },
-                                { text: "will come", correct: false }
-                            ]
+                            question: "If they had known, they ______ (come) to the party.",
+                            type: "fill-in-blank",
+                            correctAnswer:"would have come",
+                    
+                            explanation: "Correct: 'would have come' is the result clause for an unreal past situation." 
+                            
+                            
                         },
 
                 // Mixed Conditionals (Type 3 + Type 2)
@@ -916,13 +943,11 @@
                         explanation: "Inversion for First Conditional: 'If you need' can become 'Should you need' (more formal)."
                     },
                     {
-                        question: "Which sentence uses inversion for a First Conditional?",
-                        type: "multiple-choice",
-                        options: [
-                            { text: "If he arrives early, he will wait.", correct: false },
-                            { text: "Should he arrive early, he will wait.", correct: true, explanation: "Correct: 'Should he arrive' is an inversion of 'If he arrives'." },
-                            { text: "Had he arrived early, he would wait.", correct: false }
-                        ]
+                        question: "Which sentence uses inversion for a First Conditional?: Should he ______(arrive) early, he will wait.",
+                        type: "fill-in-blank",
+                        correctAnswer: "arrive",
+                        explanation: "Correct: 'Should he arrive' is an inversion of 'If he arrives'." 
+                         
                     },
 
                 // Omitting 'if' / Inversion (Second Conditional - 'Were')
@@ -932,16 +957,7 @@
                         correctAnswer: "Were I",
                         explanation: "Inversion for Second Conditional: 'If I were' can become 'Were I' (very common and formal)."
                     },
-                    {
-                        question: "Which is the correct inversion of 'If I were rich...'?",
-                        type: "multiple-choice",
-                        options: [
-                            { text: "Was I rich...", correct: false },
-                            { text: "Were I rich...", correct: true, explanation: "Correct: 'Were I' is the standard inversion for the Second Conditional with 'be'." },
-                            { text: "Had I rich...", correct: false }
-                        ]
-                    },
-
+                    
                 // Omitting 'if' / Inversion (Third Conditional - 'Had')
                     {
                         question: "______ (they known) about the problem, they would have acted differently. (Omitting 'if')",
@@ -949,15 +965,7 @@
                         correctAnswer: "Had they known",
                         explanation: "Inversion for Third Conditional: 'If they had known' can become 'Had they known'."
                     },
-                    {
-                        question: "Which is the correct inversion of 'If she had studied harder...'?",
-                        type: "multiple-choice",
-                        options: [
-                            { text: "Did she study harder...", correct: false },
-                            { text: "Had she studied harder...", correct: true, explanation: "Correct: 'Had she studied' is the standard inversion for the Third Conditional." },
-                            { text: "Would she study harder...", correct: false }
-                        ]
-                    },
+                   
 
                 // Other complex structures (for variety)
                         {
@@ -985,15 +993,7 @@
                             correctAnswer: "are manufactured",
                             explanation: "Present Simple Passive: 'These cars' are plural, so 'are manufactured'."
                         },
-                        {
-                            question: "Which sentence is in the Present Simple Passive?",
-                            type: "multiple-choice",
-                            options: [
-                                { text: "They build houses.", correct: false },
-                                { text: "Houses are built by them.", correct: true, explanation: "Correct: Present Simple Passive structure (are + Past Participle)." },
-                                { text: "Houses were built.", correct: false }
-                            ]
-                        },
+                       
 
             // 2. Present Continuous Passive
                         {
