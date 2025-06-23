@@ -1,23 +1,136 @@
 
 
+
         // Game Data - Moved to separate object for better organization
         const gameData = {
-                 vocab2: [
-                 
-                      { word: "In order to ", meaning: " is used to express purpose — it means -for the purpose of or to be able to.Examples:  I study hard in order to pass the exam.<br>→ ខ្ញុំសូត្រយ៉ាងខំ ដើម្បីឲ្យឆ្លងវិញ្ញាសា។<br>She exercises in order to stay healthy.<br>→ នាងហាត់ប្រាណ ដើម្បីរក្សាសុខភាព។", khmer: "ដើម្បី", audio: "In order to.mp3" },
-             ],
+                vegetables: [
+                    { word: "carrot 🥕", meaning: "A long, orange, root vegetable that is sweet and crunchy.", khmer: "ការ៉ុត", audio: "carrot.mp3" },
+                    { word: "potato 🥔", meaning: "A starchy, round or oval-shaped root vegetable.", khmer: "ដំឡូងបារាំង", audio: "potato.mp3" },
+                    { word: "onion 🧅", meaning: "A round vegetable with thin, dry skin and many layers inside, having a strong smell and taste.", khmer: "ខ្ទឹមបារាំង", audio: "onion.mp3" },
+                    { word: "tomato 🍅", meaning: "A soft, red fruit, eaten as a vegetable, often in salads.", khmer: "ប៉េងប៉ោះ", audio: "tomato.mp3" },
+                    { word: "cucumber 🥒", meaning: "A long, green-skinned fruit with watery flesh, usually eaten raw in salads.", khmer: "ត្រសក់", audio: "cucumber.mp3" },
+                    { word: "lettuce 🥬", meaning: "A leafy green vegetable, often used in salads.", khmer: "សាឡាត់", audio: "lettuce.mp3" },
+                    { word: "broccoli 🥦", meaning: "A green vegetable with a tree-like shape.", khmer: "ផ្កាខាត់ណាខៀវ", audio: "broccoli.mp3" },
+                    { word: "cabbage 🥬", meaning: "A round vegetable with large, green or purple leaves.", khmer: "ស្ពៃក្តោប", audio: "cabbage.mp3" },
+                    { word: "spinach 🥬", meaning: "A leafy green vegetable, rich in iron.", khmer: "ស្ពៃខ្មៅ", audio: "spinach.mp3" },
+                    { word: "bell pepper 🌶️", meaning: "A hollow, mild-flavored vegetable, often red, yellow, or green.", khmer: "ម្ទេសប្លោក", audio: "bellpepper.mp3" }
+                ],
+                fruits: [
+                    { word: "apple 🍎", meaning: "A round fruit with crisp flesh and pips.", khmer: "ផ្លែប៉ោម", audio: "apple.mp3" },
+                    { word: "banana 🍌", meaning: "A long, curved fruit with soft pulpy flesh and yellow skin when ripe.", khmer: "ចេក", audio: "banana.mp3" },
+                    { word: "orange 🍊", meaning: "A round, sweet, juicy citrus fruit with a tough, reddish-yellow rind.", khmer: "ក្រូច", audio: "orange.mp3" },
+                    { word: "grape 🍇", meaning: "A green, purple, or red berry, typically growing in clusters.", khmer: "ទំពាំងបាយជូរ", audio: "grape.mp3" },
+                    { word: "lemon 🍋", meaning: "A yellow, oval citrus fruit with thick skin and fragrant, acidic juice.", khmer: "ក្រូចឆ្មារ", audio: "lemon.mp3" },
+                    { word: "strawberry 🍓", meaning: "A sweet soft red fruit with a seed-studded surface.", khmer: "ស្ត្រប៊ឺរី", audio: "strawberry.mp3" },
+                    { word: "mango 🥭", meaning: "A fleshy, oval, yellowish-red tropical fruit.", khmer: "ស្វាយ", audio: "mango.mp3" },
+                    { word: "pineapple 🍍", meaning: "A large tropical fruit with spiky, tough skin and sweet, yellow flesh.", khmer: "ម្នាស់", audio: "pineapple.mp3" },
+                    { word: "watermelon 🍉", meaning: "A large, round, green fruit with sweet, red, watery pulp and black seeds.", khmer: "ឪឡឹក", audio: "watermelon.mp3" },
+                    { word: "pear 🍐", meaning: "A sweet, juicy fruit that is narrow at the stem and wide at the bottom.", khmer: "ផ្លែសេរី", audio: "pear.mp3" },
+                    { word: "cherry 🍒", meaning: "A small, soft, round stone fruit that is typically bright or dark red.", khmer: "ផ្លែឆឺរី", audio: "cherry.mp3" },
+                    { word: "peach 🍑", meaning: "A round stone fruit with juicy yellow flesh and fuzzy skin.", khmer: "ផ្លែប៉េស", audio: "peach.mp3" },
+                    { word: "plum 🍑", meaning: "An oval fleshy fruit that is purple, red, or yellow when ripe and contains a flattish pointed stone.", khmer: "ផ្លែព្រីង", audio: "plum.mp3" },
+                    { word: "kiwi 🥝", meaning: "A small oval fruit with a brown, hairy skin, sweet green flesh, and tiny black seeds.", khmer: "គីវី", audio: "kiwi.mp3" },
+                    { word: "blueberry 🫐", meaning: "A small, sweet, dark blue berry, often grown in clusters.", khmer: "ផ្លែប៊្លូបឺរី", audio: "blueberry.mp3" },
+
+                ],
+                hairs: [
+                    { word: "hair 💇‍♂️", meaning: "The fine threads that grow from the skin of people and animals.", khmer: "សក់", audio: "hair.mp3" },
+                    { word: "short ✂️", meaning: "Not long.", khmer: "ខ្លី", audio: "short.mp3" },
+                    { word: "long 📏", meaning: "Measuring a great distance from end to end.", khmer: "វែង", audio: "long.mp3" },
+                    { word: "curly 🔄", meaning: "Formed into coils or ringlets.", khmer: "រួញ", audio: "curly.mp3" },
+                    { word: "straight ➡️", meaning: "Without a bend or curve.", khmer: "ត្រង់", audio: "straight.mp3" },
+                    { word: "brown 🟫", meaning: "A color like that of earth or wood.", khmer: "ត្នោត", audio: "brown.mp3" },
+                    { word: "black ⚫", meaning: "The darkest color, the opposite of white.", khmer: "ខ្មៅ", audio: "black.mp3" },
+                    { word: "blonde 🌟", meaning: "Pale yellow or golden hair.", khmer: "ទង់ដែង", audio: "blonde.mp3" },
+                    { word: "red 🔴", meaning: "A color like that of blood.", khmer: "ក្រហម", audio: "red.mp3" },
+                    { word: "brush 🖌️", meaning: "An object with bristles used for tidying hair.", khmer: "ច្រាស", audio: "brush.mp3" }
+                ],
+                colors: [
+                    { word: "red 🔴", meaning: "The color of blood or fire.", khmer: "ក្រហម", audio: "red.mp3" },
+                    { word: "blue 🔵", meaning: "The color of the sky or the sea.", khmer: "ខៀវ", audio: "blue.mp3" },
+                    { word: "yellow 🟡", meaning: "The color of ripe lemons or gold.", khmer: "លឿង", audio: "yellow.mp3" },
+                    { word: "green 🟢", meaning: "The color of grass or leaves.", khmer: "បៃតង", audio: "green.mp3" },
+                    { word: "black ⚫", meaning: "The darkest color; the opposite of white.", khmer: "ខ្មៅ", audio: "black.mp3" },
+                    { word: "white ⚪", meaning: "The lightest color; the opposite of black.", khmer: "ស", audio: "white.mp3" },
+                    { word: "orange 🟠", meaning: "A color between red and yellow; the color of an orange fruit.", khmer: "ទឹកក្រូច", audio: "orange_color.mp3" },
+                    { word: "purple 🟣", meaning: "A color between red and blue.", khmer: "ស្វាយ", audio: "purple.mp3" },
+                    { word: "pink 🌸", meaning: "A pale red color.", khmer: "ផ្កាឈូក", audio: "pink.mp3" },
+                    { word: "brown 🟤", meaning: "A dark color like that of earth or wood.", khmer: "ត្នោត", audio: "brown_color.mp3" }
+                ],
+                clothes: [
+                    { word: "shirt 👕", meaning: "A piece of clothing for the upper body, typically with a collar and sleeves.", khmer: "អាវ", audio: "shirt.mp3" },
+                    { word: "trousers 👖", meaning: "An outer garment covering the body from the waist to the ankles, with a separate part for each leg.", khmer: "ខោវែង", audio: "trousers.mp3" },
+                    { word: "dress 👗", meaning: "A one-piece garment for a woman or girl that covers the body and extends down over the legs.", khmer: "រ៉ូប", audio: "dress.mp3" },
+                    { word: "skirt 👚", meaning: "A garment fastened around the waist and hanging down around the legs.", khmer: "សំពត់", audio: "skirt.mp3" },
+                    { word: "shoes 👟", meaning: "A covering for the foot, typically made of leather, with a sturdy sole and not reaching above the ankle.", khmer: "ស្បែកជើង", audio: "shoes.mp3" },
+                    { word: "socks 🧦", meaning: "A garment for the foot and lower part of the leg.", khmer: "ស្រោមជើង", audio: "socks.mp3" },
+                    { word: "coat 🧥", meaning: "An outer garment that you wear over other clothes to keep warm or for protection.", khmer: "អាវធំ", audio: "coat.mp3" },
+                    { word: "hat 🎩", meaning: "A shaped covering for the head.", khmer: "មួក", audio: "hat.mp3" },
+                    { word: "jacket 🧥", meaning: "An outer garment extending to the waist or hips, with sleeves.", khmer: "អាវក្រៅ", audio: "jacket.mp3" },
+                    { word: "t-shirt 👕", meaning: "A short-sleeved casual top, generally made of cotton.", khmer: "អាវយឺត", audio: "t-shirt.mp3" }
+                ],
+                furnitures: [
+                    { word: "chair 🪑", meaning: "A seat for one person, with a back and four legs.", khmer: "កៅអី", audio: "chair.mp3" },
+                    { word: "table 🛋️", meaning: "A piece of furniture with a flat top and one or more legs, providing a surface for eating, writing, or working.", khmer: "តុ", audio: "table.mp3" },
+                    { word: "bed 🛏️", meaning: "A piece of furniture for sleeping on, typically a framework with a mattress.", khmer: "គ្រែ", audio: "bed.mp3" },
+                    { word: "sofa 🛋️", meaning: "A long upholstered seat with a back and arms, for two or more people.", khmer: "សាឡុង", audio: "sofa.mp3" },
+                    { word: "desk 🖥️", meaning: "A piece of furniture with a flat top and often drawers, used for writing or working.", khmer: "តុការងារ", audio: "desk.mp3" },
+                    { word: "wardrobe 👗", meaning: "A large, tall cupboard in which clothes may be hung or stored.", khmer: "ទូខោអាវ", audio: "wardrobe.mp3" },
+                    { word: "lamp 💡", meaning: "A device for giving light.", khmer: "ចង្កៀង", audio: "lamp.mp3" },
+                    { word: "shelf 📚", meaning: "A flat length of wood or other rigid material, attached to a wall or forming part of a unit, used for holding objects.", khmer: "ធ្នើរ", audio: "shelf.mp3" },
+                    { word: "mirror 🪞", meaning: "A surface, typically of glass coated with a metallic amalgam, that reflects a clear image.", khmer: "កញ្ចក់", audio: "mirror.mp3" },
+                    { word: "cupboard 🗄️", meaning: "A piece of furniture with a door, doors, or drawers and usually shelves, used for storage.", khmer: "ទូ", audio: "cupboard.mp3" }
+                ],
+                animals: [
+                    { word: "dog 🐶", meaning: "A domesticated carnivorous mammal with a barking sound, typically kept as a pet or for work.", khmer: "ឆ្កែ", audio: "dog.mp3" },
+                    { word: "cat 🐱", meaning: "A small domesticated carnivorous mammal with soft fur, a short snout, and retractable claws.", khmer: "ឆ្មា", audio: "cat.mp3" },
+                    { word: "bird 🐦", meaning: "A warm-blooded egg-laying vertebrate distinguished by feathers and forelimbs modified as wings.", khmer: "បក្សី", audio: "bird.mp3" },
+                    { word: "fish 🐟", meaning: "A limbless cold-blooded vertebrate animal with gills and fins living wholly in water.", khmer: "ត្រី", audio: "fish.mp3" },
+                    { word: "elephant 🐘", meaning: "A large herbivorous mammal with a trunk, long tusks, and large ears.", khmer: "សត្វដំរី", audio: "elephant.mp3" },
+                    { word: "lion 🦁", meaning: "A large wild cat with a tawny coat and a tufted tail, known as the king of the jungle.", khmer: "សត្វស្វា", audio: "lion.mp3" },
+                    { word: "tiger 🐅", meaning: "A large wild cat with a striped coat, native to Asia.", khmer: "សត្វខ្លាឃ្មុំ", audio: "tiger.mp3" },
+                    { word: "bear 🐻", meaning: "A large heavy mammal that walks on the soles of its feet, with thick fur and a very short tail.", khmer: "សត្វឆ្កែរនៅព្រៃ", audio: "bear.mp3" },
+                    { word: "rabbit 🐰", meaning: "A small burrowing mammal with long ears, long hind legs, and a short fluffy tail.", khmer: "សត្វកណ្តុរ", audio: "rabbit.mp3" },
+                    { word: "horse 🐴", meaning: "A large solid-hoofed herbivorous mammal with a flowing mane and tail, used for riding, racing, and to carry and pull loads.", khmer: "សត្វសេះ", audio: "horse.mp3" },
+                    { word: "cow 🐮", meaning: "A large domesticated ungulate with a prominent role in agriculture, providing milk and meat.", khmer: "សត្វគោ", audio: "cow.mp3" },
+                    { word: "sheep 🐑", meaning: "A domesticated ruminant animal with a thick woolly coat, often raised for wool and meat.", khmer: "សត្វចៀម", audio: "sheep.mp3" },
+                    { word: "goat 🐐", meaning: "A hardy domesticated ruminant animal with backward-curving horns, raised for milk and meat.", khmer: "សត្វពពែ", audio: "goat.mp3" },
+                    { word: "duck 🦆", meaning: "A waterbird with a broad bill, short legs, and webbed feet, often domesticated for eggs and meat.", khmer: "សត្វទា", audio: "duck.mp3" },
+                    
+                    { word: "chicken 🐔", meaning: "A domesticated bird raised for its eggs and meat.", khmer: "សត្វមាន់", audio: "chicken.mp3" }
+                    ,{
+                    word: "kangaroo 🦘", meaning: "A large marsupial from Australia that hops on its hind legs.", khmer: "សត្វកង់ការូ", audio: "kangaroo.mp3"
+                    },
+                    {
+                        word: "panda 🐼", meaning: "A large bear-like mammal with black and white fur, native to China.", khmer: "សត្វផេនដា", audio: "panda.mp3"
+                    },
+                    {
+                        word: "giraffe 🦒", meaning: "A tall African mammal with a very long neck and legs.", khmer: "សត្វកណ្តុរខ្ពស់", audio: "giraffe.mp3"
+                    },
+                    {
+                        word: "zebra 🦓", meaning: "An African wild horse with black-and-white stripes.", khmer: "សត្វសេះបង្គួរ", audio: "zebra.mp3"
+                    },
+                    {
+                        word: "monkey 🐒", meaning: "A small to medium-sized primate that typically has a long tail.", khmer: "សត្វស្វា", audio: "monkey.mp3"
+                    },
+                    {
+                        word: "snake 🐍", meaning: "A long, legless reptile that slithers on the ground.", khmer: "សត្វសត្វពស់", audio: "snake.mp3"
+                    },
+                    {
+                        word: "frog 🐸", meaning: "A small amphibian with smooth skin and long hind legs for jumping.", khmer: "សត្វកង្កែប", audio: "frog.mp3"
+                    },
+                    {
+                        word: "turtle 🐢", meaning: "A reptile with a hard shell that lives in water or on land.", khmer: "សត្វអណ្តើក", audio: "turtle.mp3"
+                    },
+                    {
+                        word: "fox 🦊", meaning: "A small, wild carnivorous mammal with a bushy tail.", khmer: "សត្វចចក", audio: "fox.mp3"
+                    },
+                    {
+                        word: "wolf 🐺", meaning: "A large wild carnivorous mammal related to dogs.", khmer: "សត្វចចក", audio: "wolf.mp3"
+                    }
+                ],
                 
-                vocab1: [
-                      { word: "beyond (Preposition / Adverb)", meaning: "1. Preposition – Past a place or limit<br>English: The road continues beyond the hill.<br>Khmer: ផ្លូវនោះបន្តឆ្លងលើសភ្នំទៅទៀត<br>English: The damage was beyond repair.<br>Khmer: ការខូចខាតលើសសមត្ថភាពជួសជុលបាន។<br>3. Preposition – Outside the range of understanding or possibility<br>English: This concept is beyond me<br>Khmer: គំនិតនេះខ្ញុំមិនអាចយល់បានទេ។<br>4. Adverb – At a further place<br>English: He looked beyond and saw the ocean<br>Khmer: គាត់មើលទៅឆ្ងាយហើយឃើញសមុទ្រ", khmer: "លើស / ឆ្លងផុត / ក្រៅពី", audio: "beyond.mp3" },
-                      { word: "inspiration (noun)", meaning: "Something or someone that motivates you to do or feel something, exspecially something creative or positive.<br>2. A sudden good idea or feeling that encourages action. <br> Examples: 1. She is my inspiration to work harder.<br>->នាង​គីជា​ការ​ជំរុញចិត្ត​សម្រាប់ខ្ញុំឲ្យខិតខំធ្វើការជាងមុន។<br>2. This story gave me a lot of inspiration.<br>->រឿង​នេះបាន​ផ្តល់ការជំរុញចិត្តយ៉ាងច្រើនសម្រាប់ខ្ញុំ។<br>3. Nature is a source of inspiration for artists.<br>->ធម្មជាតិគឺជា​ប្រភេទ​នៃការ​ជះឥទ្ធិពលសម្រាប់សិល្បករ។ ", khmer: "ការជំរុញចិត្ត/​ ការជះឥទ្ធិពល/ បែបបទជាដើមគំនិត", audio: "inspiration.mp3" },
-
-
-                      { word: "Versatile  ( adjective)", meaning: " Able to do many different things well or having many uses.<br>Examples: She is a versatile employee.<br>→ នាងជាបុគ្គលិកដែលមានសមត្ថភាពច្រើនជំនាញ។<br>This knife is very versatile in the kitchen.<br>→ កាំបិតនេះអាចប្រើបានច្រើនទ្រង់ទ្រាយក្នុងផ្ទះបាយ។", khmer: "មានសមត្ថភាពច្រើនជំនាញ/ អាចប្រើបានច្រើនទ្រង់ទ្រាយ", audio: "versatile.mp3" },
-
-
-
-                  ],      
-            vocab: [
+                 vocab: [
                  // Your existing 60 vocabulary words go here first
                  { word: "beautiful", meaning: "pleasing to the senses or mind aesthetically", khmer: "ស្អាត", audio: "beautiful.mp3" },
                  { word: "interesting", meaning: "something that catches your attention or curiosity", khmer: "គួរឱ្យចាប់អារម្មណ៍", audio: "interesting.mp3" },
@@ -283,7 +396,7 @@
         
                 // ... (Your vocab data here, if it's in the same gameData object) ...
             
-                grammar: {
+            grammar: {
                     tenses: {
                         "Present Simple": {
                             description: "Used for habits, routines, facts, and general truths.",
@@ -615,7 +728,7 @@
                     // The structureQuiz is a general quiz, not specific to tenses.
                     // You might want to remove it or update your grammar quiz logic
                     // to choose questions from specific tenses if you prefer.
-                                  structureQuiz: [
+                    structureQuiz: [
                         {
                             question: "Choose the correct verb form: 'She usually ______ (study) at night.'",
                             type: "fill-in-blank",
@@ -629,7 +742,7 @@
                             explanation: "For planned future actions, we often use Present Continuous: 'are going'."
                         },
                         {
-                            question: " <b>By the time</b> I arrive, they ______ (finish) dinner. (Future Perfect)",
+                            question: "By the time I arrive, they ______ (finish) dinner. (Future Perfect)",
                             type: "fill-in-blank",
                             correctAnswer: "will have finished",
                             explanation: "The action of finishing dinner will be completed before the arrival in the future, thus Future Perfect."
@@ -688,11 +801,13 @@
                             explanation: "Describes an action that will be in progress at a specific time in the future."
                         },
                         {
-                            question: "They usually _____ breakfast at 7 AM.",
-                            type: "fill-in-blank",
-                            correctAnswer: "have",
-                            explanation: "Correct: 'usually have' indicates a routine or habit." 
-                               
+                            question: "Which sentence indicates a habitual action?",
+                            type: "multiple-choice",
+                            options: [
+                                { text: "He is playing outside.", correct: false },
+                                { text: "They usually have breakfast at 7 AM.", correct: true, explanation: "Correct: 'usually have' indicates a routine or habit." },
+                                { text: "She will buy a new car.", correct: false }
+                            ]
                         },
                         {
                             question: "It ______ (snow) heavily when we left the house. (Past Continuous)",
@@ -713,11 +828,13 @@
                             explanation: "A simple prediction about a future event uses 'will'."
                         },
                         {
-                            question: "We _____ to move to a new apartment next month.",
-                            type: "fill-in-blank",
-                            correctAnswer: "are going",
-                            explanation: "Correct: 'are going to move' indicates a definite future plan."
-                             
+                            question: "Which sentence uses 'be going to' for a definite future plan?",
+                            type: "multiple-choice",
+                            options: [
+                                { text: "I think it will rain.", correct: false },
+                                { text: "We are going to move to a new apartment next month.", correct: true, explanation: "Correct: 'are going to move' indicates a definite future plan." },
+                                { text: "He plays tennis every Sunday.", correct: false }
+                            ]
                         },
                         {
                             question: "He ______ (not eat) meat for a long time. (Present Perfect Simple Negative)",
@@ -747,12 +864,13 @@
                             explanation: "'No sooner had... than...' is used for an action that happened immediately after another. The first verb is in Past Perfect (had + Past Participle) and the second in Past Simple."
                         },
                         {
-                            question: "Which sentence correctly uses 'No sooner...than'?: No sooner had I ____(open) the door than he _____(leave).",
-                            type: "fill-in-blank",
-                            correctAnswer: "opened",
-                            correctAnswer: "left",          
-                            explanation: "Correct: Uses inversion with 'had' after 'No sooner' and 'than' before the second clause." 
-                             
+                            question: "Which sentence correctly uses 'No sooner...than'?",
+                            type: "multiple-choice",
+                            options: [
+                                { text: "No sooner I opened the door than he left.", correct: false },
+                                { text: "No sooner had I opened the door than he left.", correct: true, explanation: "Correct: Uses inversion with 'had' after 'No sooner' and 'than' before the second clause." },
+                                { text: "No sooner had I open the door when he left.", correct: false }
+                            ]
                         },
 
                         // Hardly had + Subject + Past Participle + when + Subject + Past Simple
@@ -799,40 +917,7 @@
                         question: "Only after he had finished his degree ______ (he find) a good job.",
                         type: "fill-in-blank",
                         correctAnswer: "did he find",
-                        explanation: ` This is an example of inversion after 'Only after'. The main clause requires 'did' + subject + base verb.<br>✅ Explanation:<br>This sentence emphasizes the order of events — first finishing<br>his degree, then finding a good job.<br>The use of “only after...” highlights that the second event depends on the first.
-                        <br>➥ មានតែបន្ទាប់ពីគាត់បានបញ្ចប់សញ្ញាបត្ររបស់គាត់ ទើបគាត់រកបានការងារល្អ។
-                        <br>🔹 2️⃣ Natural Translation (Fluently, as a native speaker would say): 
-                        <br>➥ មានតែពេលដែលគាត់បញ្ចប់ការសិក្សាទើបគាត់អាចរកបានការងារល្អ។
-                        <br>➥ Other variant:
-                        <br>➥ បន្ទាប់ពីបញ្ចប់ការសិក្សារួច គាត់ទើបរកបានការងារល្អ។
-                        <br>🔹 3️⃣ More formal or casual versions:
-                        <br> ✅ Formal:
-                        <br> ➥ មានតែបន្ទាប់ពីលោកបានបញ្ចប់ការសិក្សារបស់លោកប៉ុណ្ណោះ ទើបលោកអាចស្វែងរកការងារសមរម្យបាន។
-                        <br> (Using លោក instead of គាត់ for formality)
-
-                        <br> ✅ Casual:
-                        <br> ➥ បន្ទាប់ពីរៀនចប់ហើយ ទើបគាត់បានរកការងារល្អធ្វើ។
-                        <br> (Simple and more conversational)
-                        <br>🔹 4️⃣ Breakdown of sentence structure:
-                        <br>➥ “Only after he had finished his degree...”
-
-                        <br>Main Clause Indicator: Only after
-
-                        <br>Subject: He
-
-                        <br>Action (past perfect tense in English, literal in Khmer): had finished his degree
-
-                        <br>➥ “...did he find a good job.”
-
-                        <br>Main Clause: did find
-
-                        <br>Subject: he
-
-                        <br>Object: a good job
-
-                        <br>➥ The sentence highlights dependence — first degree finished, then job found.
-                        <br>This is a form of inverted sentence in English.
-                        <br>Usually we’d say: “He found a good job only after he had finished his degree.”` 
+                        explanation: "This is an example of inversion after 'Only after'. The main clause requires 'did' + subject + base verb."
                     },
 
                     // So + Adjective/Adverb + auxiliary + S + that...
@@ -848,7 +933,7 @@
                         question: "If only I ______ (know) about the party earlier!",
                         type: "fill-in-blank",
                         correctAnswer: "had known",
-                        explanation: "'If only' used for wishes about the past requires the Past Perfect tense (had + Past Participle).➥ បើត្រឹមតែខ្ញុំបានដឹងពីពិធីជប់លៀងនេះមុន នោះប្រសើរជាង។<br>➥ បើសិនជាខ្ញុំដឹងមុន អាចទៅចូលរួមបាន។ (more casual)"
+                        explanation: "'If only' used for wishes about the past requires the Past Perfect tense (had + Past Participle)."
                     },
 
                     // It's high time / It's about time
@@ -889,11 +974,12 @@
                         },
                         {
                             question: "Which option correctly completes the First Conditional sentence: 'If I study hard, I ______ (pass) the exam.'",
-                            type: "fill-in-blank",
-                            correctAnswer: "will pass",
-                            explanation: "Correct: 'will pass' is the result clause for a real future possibility." 
-                            
-                            
+                            type: "multiple-choice",
+                            options: [
+                                { text: "pass", correct: false },
+                                { text: "will pass", correct: true, explanation: "Correct: 'will pass' is the result clause for a real future possibility." },
+                                { text: "passed", correct: false }
+                            ]
                         },
 
                 // Second Conditional (Unreal Present/Future)
@@ -918,13 +1004,13 @@
                             explanation: "Third Conditional for unreal situations in the past: If + Past Perfect, would have + Past Participle."
                         },
                         {
-                            question: "If they had known, they ______ (come) to the party.",
-                            type: "fill-in-blank",
-                            correctAnswer:"would have come",
-                    
-                            explanation: "Correct: 'would have come' is the result clause for an unreal past situation." 
-                            
-                            
+                            question: "Which option completes the Third Conditional: 'If they had known, they ______ (come) to the party.'",
+                            type: "multiple-choice",
+                            options: [
+                                { text: "would come", correct: false },
+                                { text: "would have come", correct: true, explanation: "Correct: 'would have come' is the result clause for an unreal past situation." },
+                                { text: "will come", correct: false }
+                            ]
                         },
 
                 // Mixed Conditionals (Type 3 + Type 2)
@@ -943,11 +1029,13 @@
                         explanation: "Inversion for First Conditional: 'If you need' can become 'Should you need' (more formal)."
                     },
                     {
-                        question: "Which sentence uses inversion for a First Conditional?: Should he ______(arrive) early, he will wait.",
-                        type: "fill-in-blank",
-                        correctAnswer: "arrive",
-                        explanation: "Correct: 'Should he arrive' is an inversion of 'If he arrives'." 
-                         
+                        question: "Which sentence uses inversion for a First Conditional?",
+                        type: "multiple-choice",
+                        options: [
+                            { text: "If he arrives early, he will wait.", correct: false },
+                            { text: "Should he arrive early, he will wait.", correct: true, explanation: "Correct: 'Should he arrive' is an inversion of 'If he arrives'." },
+                            { text: "Had he arrived early, he would wait.", correct: false }
+                        ]
                     },
 
                 // Omitting 'if' / Inversion (Second Conditional - 'Were')
@@ -957,7 +1045,16 @@
                         correctAnswer: "Were I",
                         explanation: "Inversion for Second Conditional: 'If I were' can become 'Were I' (very common and formal)."
                     },
-                    
+                    {
+                        question: "Which is the correct inversion of 'If I were rich...'?",
+                        type: "multiple-choice",
+                        options: [
+                            { text: "Was I rich...", correct: false },
+                            { text: "Were I rich...", correct: true, explanation: "Correct: 'Were I' is the standard inversion for the Second Conditional with 'be'." },
+                            { text: "Had I rich...", correct: false }
+                        ]
+                    },
+
                 // Omitting 'if' / Inversion (Third Conditional - 'Had')
                     {
                         question: "______ (they known) about the problem, they would have acted differently. (Omitting 'if')",
@@ -965,7 +1062,15 @@
                         correctAnswer: "Had they known",
                         explanation: "Inversion for Third Conditional: 'If they had known' can become 'Had they known'."
                     },
-                   
+                    {
+                        question: "Which is the correct inversion of 'If she had studied harder...'?",
+                        type: "multiple-choice",
+                        options: [
+                            { text: "Did she study harder...", correct: false },
+                            { text: "Had she studied harder...", correct: true, explanation: "Correct: 'Had she studied' is the standard inversion for the Third Conditional." },
+                            { text: "Would she study harder...", correct: false }
+                        ]
+                    },
 
                 // Other complex structures (for variety)
                         {
@@ -993,7 +1098,15 @@
                             correctAnswer: "are manufactured",
                             explanation: "Present Simple Passive: 'These cars' are plural, so 'are manufactured'."
                         },
-                       
+                        {
+                            question: "Which sentence is in the Present Simple Passive?",
+                            type: "multiple-choice",
+                            options: [
+                                { text: "They build houses.", correct: false },
+                                { text: "Houses are built by them.", correct: true, explanation: "Correct: Present Simple Passive structure (are + Past Participle)." },
+                                { text: "Houses were built.", correct: false }
+                            ]
+                        },
 
             // 2. Present Continuous Passive
                         {
@@ -1130,12 +1243,12 @@
                 
             shadowing: {
                 "Speak like a pro Sentences": [
-                    { sentence: "Hello, how are you?", khmer: "ជំរាបសួរ អ្នកសុខសប្បាយជាទេ?" },
-                    { sentence: "I am fine, thank you.", khmer: "ខ្ញុំសុខសប្បាយធម្មតា អរគុណ។" },
-                    { sentence: "What is your name?", khmer: "តើអ្នកឈ្មោះអ្វី?" },
-                    { sentence: "I love learning English. It's so rewarding!", khmer: "ខ្ញុំស្រលាញ់ការសិក្សាភាសាអង់គ្លេស។ វាពិតជាមានប្រយោជន៍ណាស់!" },
-                    { sentence: "Could you please repeat that?", khmer: "សូមអ្នកជួយនិយាយម្ដងទៀតបានទេ?" },
-                    { sentence: "The weather is beautiful today.", khmer: "អាកាសធាតុថ្ងៃនេះស្រស់ស្អាតណាស់។" },
+                    { sentence: "The position property controls how and where an element is placed in the document layout.", khmer: "" },
+                    { sentence: "static	Default; normal flow of the document (no positioning).", khmer: "" },
+                    { sentence: "relative	Positioned relative to itself (can shift using top, left, etc.).", khmer: "" },
+                    { sentence: "absolute	Positioned relative to the nearest positioned ancestor or html tag.", khmer: "" },
+                    { sentence: "fixed	Stays fixed to the viewport (screen), doesn’t scroll.", khmer: "" },
+                    { sentence: "sticky	Behaves like relative until it reaches a scroll point, then sticks", khmer: "" },
                     { sentence: "How are you today?", khmer: "អ្នកសុខសប្បាយរបស់ថ្ងៃនេះដែរឬទេ?" },
                     { sentence: "I love learning English. It's so rewarding!", khmer: "ខ្ញុំស្រលាញ់ការសិក្សាភាសាអង់គ្លេស។ វាពិតជាមានប្រយោជន៍ណាស់!" },
                     { sentence: "This is my favorite book. I highly recommend it.", khmer: "នេះជាសៀវភៅដែលខ្ញុំចូលចិត្តបំផុត។ ខ្ញុំសូមណែនាំវា។" },
@@ -1628,8 +1741,17 @@
                              <button class="btn btn-primary" style="background-color: #4CAF50; color: white;" onclick="startVocabQuiz(15)">🔹 15 Words (Beginner)</button>
                              <button class="btn btn-primary" style="background-color: #FF9800; color: white;" onclick="startVocabQuiz(30)">😊 30 Words (Intermediate)</button>
                              <button class="btn btn-primary" style="background-color: #FF9800; color: white;" onclick="startVocabQuiz(40)">🔷 40 Words (Intermediate)</button>
-                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuiz1(${gameData.vocab1.length})">👉 New  ${gameData.vocab1.length}  Words</button>
-                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuiz2(${gameData.vocab2.length})">🟠 ពាក្យពិសេស</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuizfruits(${gameData.fruits.length})">🍎 Fruit ${gameData.fruits.length} Words</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuizvegetables(${gameData.vegetables.length})">🥕 Vegetable</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuizhairs(${gameData.hairs.length})">💇‍♂️ Hair</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuizcolors(${gameData.colors.length})">🎨 Colors</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuizclothes(${gameData.clothes.length})">👗 Clothes</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuizfurnitures(${gameData.furnitures.length})">🪑 Furniture</button>
+                             <button class="btn btn-primary" style="background-color: #2196F3; color: white;" onclick="startVocabQuizanimals(${gameData.animals.length})">🐶 Animals</button>
+                            <button class="btn btn-primary" style="background-color: #F44336; color: white;" onclick="startVocabQuiz(50)">🔺 50 Words (Advanced)</button>
+                            
+                             
+
                              <button class="btn btn-primary" style="background-color: #F44336; color: white;" onclick="startVocabQuiz(${gameData.vocab.length})">🔺 All ${gameData.vocab.length} Words (Advanced)</button>
                            </div>
                            <div class="text-center" style="margin-top: 1rem;">
@@ -1640,31 +1762,90 @@
        }
  
     
-function startVocabQuiz2(length) {
-          gameState.quizLength = length; // Store the selected quiz length
-          // Shuffle the entire vocabulary data and then take only the required length
-          gameState.currentPool = shuffleArray(gameData.vocab2).slice(0, gameState.quizLength);
-          gameState.currentIndex = 0;
-          gameState.score = 0;
-          displayVocabQuestion();
-      }
-function startVocabQuiz1(length) {
-          gameState.quizLength = length; // Store the selected quiz length
-          // Shuffle the entire vocabulary data and then take only the required length
-          gameState.currentPool = shuffleArray(gameData.vocab1).slice(0, gameState.quizLength);
-          gameState.currentIndex = 0;
-          gameState.score = 0;
-          displayVocabQuestion();
-}
-      function startVocabQuiz(length) {
+function startVocabQuiz(length) {
           gameState.quizLength = length; // Store the selected quiz length
           // Shuffle the entire vocabulary data and then take only the required length
           gameState.currentPool = shuffleArray(gameData.vocab).slice(0, gameState.quizLength);
+          
+         
           gameState.currentIndex = 0;
           gameState.score = 0;
           displayVocabQuestion();
       }
-
+      function startVocabQuizfruits(length) {
+          gameState.quizLength = length; // Store the selected quiz length
+          // Shuffle the entire vocabulary data and then take only the required length
+          
+          gameState.currentPool = shuffleArray(gameData.fruits).slice(0, gameState.quizLength);
+         
+         
+          gameState.currentIndex = 0;
+          gameState.score = 0;
+          displayVocabQuestion();
+      }
+      function startVocabQuizvegetables(length) {
+          gameState.quizLength = length; // Store the selected quiz length
+          // Shuffle the entire vocabulary data and then take only the required length
+          
+          gameState.currentPool = shuffleArray(gameData.vegetables).slice(0, gameState.quizLength);
+         
+         
+          gameState.currentIndex = 0;
+          gameState.score = 0;
+          displayVocabQuestion();
+      }
+      function startVocabQuizhairs(length) {
+          gameState.quizLength = length; // Store the selected quiz length
+          // Shuffle the entire vocabulary data and then take only the required length
+          
+          gameState.currentPool = shuffleArray(gameData.hairs).slice(0, gameState.quizLength);
+          
+         
+          gameState.currentIndex = 0;
+          gameState.score = 0;
+          displayVocabQuestion();
+      }
+      function startVocabQuizcolors(length) {
+          gameState.quizLength = length; // Store the selected quiz length
+          // Shuffle the entire vocabulary data and then take only the required length
+          
+          gameState.currentPool = shuffleArray(gameData.colors).slice(0, gameState.quizLength);
+          
+          gameState.currentIndex = 0;
+          gameState.score = 0;
+          displayVocabQuestion();
+      }
+      function startVocabQuizclothes(length) {
+          gameState.quizLength = length; // Store the selected quiz length
+          // Shuffle the entire vocabulary data and then take only the required length
+          
+          gameState.currentPool = shuffleArray(gameData.clothes).slice(0, gameState.quizLength);
+         
+         
+          gameState.currentIndex = 0;
+          gameState.score = 0;
+          displayVocabQuestion();
+      }
+      function startVocabQuizfurnitures(length) {
+          gameState.quizLength = length; // Store the selected quiz length
+          // Shuffle the entire vocabulary data and then take only the required length
+          
+          gameState.currentPool = shuffleArray(gameData.furnitures).slice(0, gameState.quizLength);
+         
+          gameState.currentIndex = 0;
+          gameState.score = 0;
+          displayVocabQuestion();
+      }
+function startVocabQuizanimals(length) {
+          gameState.quizLength = length; // Store the selected quiz length
+          // Shuffle the entire vocabulary data and then take only the required length
+          
+          gameState.currentPool = shuffleArray(gameData.animals).slice(0, gameState.quizLength);
+         
+          gameState.currentIndex = 0;
+          gameState.score = 0;
+          displayVocabQuestion();
+      }
 
       function displayVocabQuestion() {
           // New: Clear any existing timer when a new question is displayed
@@ -2391,3 +2572,7 @@ function startVocabQuiz1(length) {
 
 
 
+
+
+  
+ 
